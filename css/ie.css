@@ -1,0 +1,19 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700);
+*+html{overflow:auto;}
+#carousel1 li  img, .pagination a,.soc_list li a,.figure img,.tracker-individual-blip,.drop_cap {behavior:url(js/PIE.htc);position:relative}
+
+
+.pagination a {
+	margin-left: 4px;
+}
+
+.pagination  {
+
+	margin-left: -45px;
+}
+
+a.gal:hover img {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}

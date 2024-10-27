@@ -1,0 +1,207 @@
+
+/***** menu *****/
+nav {
+	float:right;
+}
+.menu {
+	float:left;
+	padding:35px 0 0;
+	position:relative;
+	z-index:999;
+}
+.menu li {
+	float:left; 
+	position:relative;
+	margin-left:40px;
+}
+.menu li a {
+	display:block;
+	font-size:12px;
+	line-height:15px;
+	color:#2d2d2d;
+	text-transform:uppercase; 
+	z-index:20;
+	position:relative;
+}
+.menu li.sfHover {
+	position:relative;
+	z-index:10;
+}
+.menu li a.active,
+.menu > li > a:hover,
+.menu > li.sfHover > a {
+	text-decoration:underline;
+}
+
+.menu ul {
+	z-index:20;
+	letter-spacing:normal;
+	position:		absolute;
+	top:			-9999em;
+	width:			130px;
+	background:#d07d5a;
+	border:			none;
+	padding:23px 0 22px;
+}
+.menu ul:after {
+	display:block;
+	content:'';
+	background:url(../images/sub-1.png) left top no-repeat;
+	width:15px;
+	height:12px;
+	position:absolute;
+	top:-12px;
+	left:50%;
+	margin-left:-8px;
+}
+.menu ul ul:after {
+	display:block;
+	content:'';
+	background:url(../images/sub-2.png) left top no-repeat;
+	width:12px;
+	height:15px;
+	position:absolute;
+	top:8px;
+	left:-4px;
+}
+.menu ul ul {
+	background:#2d2d2d;
+}
+.menu ul li {width:	100%;}
+.menu li:hover {visibility:	inherit; }
+.menu li li {
+	background:none;
+	margin:3px 0;
+	border:none;
+	text-align:center;
+}
+
+.menu li li a {
+	text-transform:none;
+	display:		block;
+	padding:3px 0 4px;
+	color:#fff;
+}
+
+.menu li:hover ul, .menu li.sfHover ul {
+	left:			-30px;
+	top:			40px;
+	z-index:		999;
+}
+ul.menu li:hover li ul, ul.menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.menu li li:hover ul, ul.menu li li.sfHover ul {
+	left:			142px;
+	top:			0px;
+	z-index:		9999;
+}
+ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
+	top:			-999em;
+}
+
+
+
+
+.menu>li>.sf-with-ul>span {
+	display: block;
+	position: absolute;
+	background: url(../images/arrows.png) 0 0 no-repeat;
+	width: 7px;
+	height: 5px;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -10px;
+}
+
+.menu>li>ul>li>.sf-with-ul>span {
+	display: block;
+	position: absolute;
+	background: url(../images/arrows.png) 0 bottom no-repeat;
+	width: 7px;
+	height: 5px;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -5px;
+	pointer-events: none;
+} 
+
+.carousel  {
+	overflow: hidden;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 995px) {
+.sf-menu>li {
+	width: 75px;
+}
+
+
+
+
+
+
+a.last3 {
+	width: auto !important;
+}
+
+  header nav {
+  	margin-left: 0;
+  }
+
+  
+
+
+}
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		margin: 0 0px !important;	
+		padding: 20px 10px 20px;
+		clear: both;
+		left: 0;
+		right: 0;
+	}
+
+
+
+header .fright {
+	float: none;
+}
+
+	.head-box3 {
+		padding: 25px 0;
+	}
+
+.foot-img {
+	display: block;
+}
+
+
+  header nav{
+		float:none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		background: none;
+		margin: 0 auto;
+		
+	
+	}
+
+	.menu{display:none !important; float: none;}
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+    outline: none;
+		border:2px solid #fff;
+	}
+	
+	.search_block {
+		padding-bottom: 10px !important;	
+	}
+}

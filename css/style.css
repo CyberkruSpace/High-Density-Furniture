@@ -106,6 +106,90 @@ nav {
   nav ul a:hover {
 	color: #d07d5a;
   }
+footer {
+	border-radius: 15px;
+    background-color: #ff9f7f; /* Background color for the footer */
+    color: #ffffff; /* Text color */
+    padding: 20px 0;
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure background spans full width */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: flex-start; /* Align items at the start */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-content {
+    flex: 1; /* Grow items to fill container */
+    min-width: 250px; /* Minimum width for each column */
+    margin: 10px 0; /* Vertical margin */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content h5 {
+    margin-bottom: 10px; /* Margin below the headings */
+    font-size: 18px; /* Font size for headings */
+}
+
+.footer-content p, .footer-content a {
+    margin-bottom: 5px; /* Margin below paragraphs and links */
+    font-size: 14px; /* Font size for paragraphs and links */
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-content a:hover {
+    color: #FFf; /* Hover color for links */
+}
+
+.socials {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: flex-start; /* Align icons to the start */
+}
+
+.socials li {
+    list-style: none; /* Remove list style */
+    margin-right: 10px; /* Right margin for spacing */
+}
+
+.bottom-bar {
+    background-color: #ff9f7f; /* Background color for bottom bar */
+    padding: 10px 0; /* Vertical padding */
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add some space above the bottom bar */
+}
+
+.bottom-bar p {
+    margin: 0; /* No margin */
+    font-size: 14px; /* Font size */
+}
+
+.bottom-bar a {
+    color: #fff; /* Link color in bottom bar */
+    text-decoration: none; /* Remove underline */
+}
+
+.bottom-bar a:hover {
+    color: #fff; /* Hover color for links */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text */
+    }
+    .footer-content {
+        text-align: center; /* Center text within columns */
+    }
+}
   
   @media (max-width: 768px) {
 	.menu-toggle {
